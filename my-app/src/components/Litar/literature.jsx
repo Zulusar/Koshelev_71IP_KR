@@ -2,7 +2,7 @@ import { useState } from "react";
 import { studentGroup } from "../Group/StudentGroup";
 import { Link } from "react-router-dom";
 
-export function RussianLanguage(){
+export function Literature(){
     const [ratings, setratings] = useState (studentGroup)
 
     const [ratings1, setratings1] = useState (studentGroup)
@@ -38,7 +38,7 @@ export function RussianLanguage(){
         setratings2(newStudentGroup)
     }
 
-    function result(){       
+    function result(){
         let newResult = (Number(ratings[0].rating) + Number(ratings1[0].rating) + Number(ratings2[0].rating))/3
         return (Number.isNaN(newResult) ? newResult = 0: newResult.toFixed(1))
     }
@@ -46,7 +46,7 @@ export function RussianLanguage(){
     return(
         <>
         <header><Link to='/'>Классный журнал</Link></header>
-            <header>Русский язык</header>
+            <header>Литература</header>
             {ratings.map((student) => (
                 <div key = {student.id}>
                     <li>{student.name = "Филимон Хуч"}</li>

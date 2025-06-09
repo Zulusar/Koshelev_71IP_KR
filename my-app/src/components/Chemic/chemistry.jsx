@@ -2,8 +2,8 @@ import { useState } from "react";
 import { studentGroup } from "../Group/StudentGroup";
 import { Link } from "react-router-dom";
 
-export function RussianLanguage(){
-    const [ratings, setratings] = useState (studentGroup)
+export function Chemistery() {
+const [ratings, setratings] = useState (studentGroup)
 
     const [ratings1, setratings1] = useState (studentGroup)
 
@@ -46,7 +46,7 @@ export function RussianLanguage(){
     return(
         <>
         <header><Link to='/'>Классный журнал</Link></header>
-            <header>Русский язык</header>
+            <header>Химия</header>
             {ratings.map((student) => (
                 <div key = {student.id}>
                     <li>{student.name = "Филимон Хуч"}</li>
@@ -71,10 +71,8 @@ export function RussianLanguage(){
                 <h3>Средняя оценка</h3>
                 <p>{result()}</p>
             </div>
-           
-
         </>
-
     )
 }
+
 
